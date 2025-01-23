@@ -1,0 +1,202 @@
+:root {
+    --ff-primary: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    font-family: monospace, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+    cursor: url('IMAGES/mouse.png'), auto;
+}
+
+button, input, textarea, select, button:hover, input:hover, textarea:hover, select:hover {
+    cursor: url('IMAGES/mouse.png'), auto;
+}
+
+h1 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+span {
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4d3bed;
+}
+
+html {
+    margin: 0px;
+}
+
+header {
+    background-color: #5792f9;
+    padding: 50px 0;
+    text-align: center;
+    color: aliceblue;
+}
+
+header li {
+    list-style: none;
+}
+
+
+#logo {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+#logo a {
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+#nav-links > li > a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+}
+
+#play {
+    background-color: #e8e8e8;
+    color: rgb(70, 70, 70);
+    border: none;
+    padding: 0rem 3rem;
+    width: 70%;
+    cursor: pointer;
+    border-radius: 5px;
+    border-top: 0.3rem solid #5792f9;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#nav-links {
+    gap: 4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+#nav-links a:hover, #nav-links a:active {
+    color:  #4d3bed;
+}
+
+main {
+    justify-content: center;
+    height: 1080px;
+    padding: 20px;
+    background-color: bisque;;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#title {
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#pre-div {
+    display: flex;
+    justify-content: center;
+    width: 85rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.column-1, .column-3 {
+   display: flex;
+   align-items: center;
+}
+
+.column-2 {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: 0.2rem solid #5792f9;
+}
+
+.card {
+    text-align: center;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+    justify-content: center
+}
+
+.card-text p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.card-text a {
+    text-decoration: none;
+    margin: 0.4rem 0;
+    font-size: 0.8rem;
+}
+
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.card h3 { 
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+
+footer {
+    background-color: #5792f9;
+    padding: 20px 0;
+    text-align: center;
+    color: aliceblue;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border: 2px solid #000; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4d3bed; 
+    border: 2px solid #000; 
+    border-radius: 0;
+    box-shadow: inset 0 0 0 1px #000; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3925e9; 
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Aloha" content="WebDeveloper">
+    <link href="styles.css" rel="stylesheet">
+    <title>Aloha Website</title>
+</head>
+<body>
+    <header>
+    <nav id="navbar">
+        <h2 id="logo"><a href="index.html">Aloha Website</a></h2>
+        <ul id="nav-links">
+            <li><a href="index.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button id="play" onclick="document.getElementById('background-music').play()">Play Music</button></li>
+        </ul>
+    </nav>
+</header>
+    <main> 
+        <div id="title-top">
+        <h1 id="title-about">Welcome to <span>Aloha Website</span></h1>
+        </div>
+        <section id="pre-about">
+            <section id="about">
+                <div id="about-l">
+                    <p>
+                        I'm Aloha, a web developer who started with WordPress in 2018. In 2025, I began diving into React programming, starting from the basics of HTML to expand my technical skills. </p>
+                    <button id="btn-projects"><a href="projects.html">Projects</a></button>
+                </div>  
+                <div id="about-r">
+                    <img src="IMAGES/me-coding.jpg" alt="My Photo">
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; 2025 Aloha Website</p>
+    </footer>
+    <audio id="background-music" src="SOUND/home.mp3" autoplay></audio>
+</body>
+</html>

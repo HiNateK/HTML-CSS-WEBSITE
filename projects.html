@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Aloha" content="WebDeveloper">
+    <link href="projects.css" rel="stylesheet">
+    <title>Aloha Website</title>
+</head>
+<body>
+    <header>
+    <nav id="navbar">
+        <h2 id="logo"><a href="index.html">Aloha Website</a></h2>
+        <ul id="nav-links">
+            <li><a href="index.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button id="play" onclick="document.getElementById('background-music').play()">Play Music</button></li>
+        </ul>
+    </nav>
+</header>
+    <main> 
+        <section id="title">
+            <h1>Projects <span>I made</span></h1>
+            <p>here are some of the projects</p>
+        </section>
+        <div id="pre-div">
+            <div class="column-1">
+                <div class="card">
+                    <img src="IMAGES/1.png" alt="Project1">
+                    <div class="card-text">
+                     <h3>Fish Restaurant</h3>
+                     <p>Best seafood</p>
+                     <a href="ribjibistro.si">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column-2">
+                <div class="card">
+                    <img src="IMAGES/2.png" alt="Project1">
+                    <div class="card-text">
+                        <h3>Kin Screen</h3>
+                        <p>Bring memories</p>
+                        <a href="kinscreenc.com">View Project</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="IMAGES/3.png" alt="Project1">
+                    <div class="card-text">
+                     <h3>Tao Patch</h3>
+                     <p>Medicine product</p>
+                     <a href="taopatch.si">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="card">
+                    <img src="IMAGES/4.png" alt="Project1">
+                    <div class="card-text">
+                     <h3>Leredd</h3>
+                     <p>IR led therapy</p>
+                     <a href="leredd.com">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> &copy; 2025 Aloha Website</p>
+    </footer>
+    <audio id="background-music" src="SOUND/projects.mp3" autoplay></audio>
+</body>
+</html>
