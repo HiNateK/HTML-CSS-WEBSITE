@@ -7,11 +7,6 @@
     font-size: 18px;
     padding: 0px;
     margin: 0px;
-    cursor: url('IMAGES/mouse.png'), auto;
-}
-
-button, input, textarea, select, button:hover, input:hover, textarea:hover, select:hover {
-    cursor: url('IMAGES/mouse.png'), auto;
 }
 
 h1 {
@@ -34,7 +29,7 @@ html {
 
 header {
     background-color: #5792f9;
-    padding: 50px 0;
+    padding: 15px 0;
     text-align: center;
     color: aliceblue;
 }
@@ -64,18 +59,6 @@ header li {
     text-transform: uppercase;
 }
 
-#play {
-    background-color: #e8e8e8;
-    color: rgb(70, 70, 70);
-    border: none;
-    padding: 0rem 3rem;
-    width: 70%;
-    cursor: pointer;
-    border-radius: 5px;
-    border-top: 0.3rem solid #5792f9;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
 #nav-links {
     gap: 4rem;
     font-weight: 600;
@@ -89,7 +72,7 @@ header li {
 
 main {
     justify-content: center;
-    height: 1080px;
+    min-height: 1080px;
     padding: 20px;
     background-color: bisque;;
 }
@@ -109,7 +92,7 @@ main {
 #pre-div {
     display: flex;
     justify-content: center;
-    width: 85rem;
+    max-width: 100%;
     justify-content: center;
     margin: 0 auto;
 }
@@ -163,7 +146,7 @@ main {
 }
 
 .card img:hover {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -199,4 +182,41 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #3925e9; 
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {  
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        margin: 0;
+    }
+    span {
+        font-size: 1.5rem;
+        display: block;
+    }
+    #nav-links {
+        display: none;
+    }
+
+    #pre-div {
+        padding-top: 1rem;
+        flex-direction: column;
+    }
+    .column-1, .column-3 {
+        padding: 1rem 2rem 2rem 2rem;
+    }
+
+    .column-2 {
+        padding: 1rem 2rem 2rem 2rem;
+        gap: 2rem;
+    }
+    #title {
+        margin: 0;
+    }
+    main {
+        padding: 0 0 2rem 0;
+    }
 }

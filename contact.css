@@ -7,11 +7,6 @@
     font-size: 18px;
     padding: 0px;
     margin: 0px;
-    cursor: url('IMAGES/mouse.png'), auto;
-}
-
-button, input, textarea, select, button:hover, input:hover, textarea:hover, select:hover {
-    cursor: url('IMAGES/mouse.png'), auto;
 }
 
 h1 {
@@ -41,7 +36,7 @@ html {
 
 header {
     background-color: #5792f9;
-    padding: 50px 0;
+    padding: 15px 0;
     text-align: center;
     color: aliceblue;
 }
@@ -84,7 +79,7 @@ header li {
 
 main {
     justify-content: center;
-    height: 900px;
+    min-height: 900px;
     background-color: bisque;;
     padding: 20px;
 }
@@ -132,18 +127,6 @@ main {
     border-radius: 5px;
     border-top: 0.3rem solid #5792f9;
     margin: 2rem auto 0 auto;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-#play {
-    background-color: #e8e8e8;
-    color: rgb(70, 70, 70);
-    border: none;
-    padding: 0rem 3rem;
-    width: 70%;
-    cursor: pointer;
-    border-radius: 5px;
-    border-top: 0.3rem solid #5792f9;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -210,4 +193,27 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #3925e9; 
+}
+
+@media only screen and (max-width: 768px) {  
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        margin: 0;
+    }
+    span {
+        font-size: 1.5rem;
+        display: block;
+    }
+    #nav-links {
+        display: none;
+    }
+
+   main {
+    padding: 0;
+   }
+   #contact {
+       margin: 0;
+   }
 }
