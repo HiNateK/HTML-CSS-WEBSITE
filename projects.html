@@ -15,6 +15,12 @@
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <button class="button-three" aria-controls="primary-navigation" aria-expanded="false">
+            <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120">
+              <path class="line" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+              </path>
+            </svg>
+          </button>
     </nav>
 </header>
     <main> 
@@ -29,7 +35,7 @@
                     <div class="card-text">
                      <h3>Fish Restaurant</h3>
                      <p>Best seafood</p>
-                     <a href="https://ribjibistro.si/" target="_blank">View Project</a>
+                     <a class="btn" href="https://ribjibistro.si/" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
@@ -39,7 +45,7 @@
                     <div class="card-text">
                         <h3>Kin Screen</h3>
                         <p>Bring memories</p>
-                        <a href="http://kinscreen.com" target="_blank">View Project</a>
+                        <a class="btn" href="http://kinscreen.com" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="card">
@@ -47,7 +53,7 @@
                     <div class="card-text">
                      <h3>Tao Patch</h3>
                      <p>Medicine product</p>
-                     <a href="https://taopatch.si/" target="_blank" >View Project</a>
+                     <a class="btn" href="https://taopatch.si/" target="_blank" >View Project</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +63,7 @@
                     <div class="card-text">
                      <h3>Leredd</h3>
                      <p>IR led therapy</p>
-                     <a href="https://leredd.com/" target="_blank">View Project</a>
+                     <a class="btn" href="https://leredd.com/" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
@@ -66,5 +72,25 @@
     <footer>
         <p> &copy; 2025 Aloha Website</p>
     </footer>
+    <script>
+        const buttons = document.querySelectorAll("button");
+        const navLinks = document.getElementById("nav-links");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const currentState = button.getAttribute("data-state");
+
+    if (!currentState || currentState === "closed") {
+      button.setAttribute("data-state", "opened");
+      button.setAttribute("aria-expanded", "true");
+      navLinks.style.display = "flex"; // Show nav-links
+    } else {
+      button.setAttribute("data-state", "closed");
+      button.setAttribute("aria-expanded", "false");
+      navLinks.style.display = "none"; // Show nav-links
+    }
+  });
+});
+    </script>
 </body>
 </html>

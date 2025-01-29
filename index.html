@@ -15,6 +15,12 @@
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <button class="button-three" aria-controls="primary-navigation" aria-expanded="false">
+            <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120">
+              <path class="line" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+              </path>
+            </svg>
+          </button>
     </nav>
 </header>
     <main> 
@@ -37,5 +43,26 @@
     <footer>
         <p> &copy; 2025 Aloha Website</p>
     </footer>
+    <script>
+        const buttons = document.querySelectorAll("button");
+        const navLinks = document.getElementById("nav-links");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const currentState = button.getAttribute("data-state");
+
+    if (!currentState || currentState === "closed") {
+      button.setAttribute("data-state", "opened");
+      button.setAttribute("aria-expanded", "true");
+      navLinks.style.display = "flex"; // Show nav-links
+    } else {
+      button.setAttribute("data-state", "closed");
+      button.setAttribute("aria-expanded", "false");
+      navLinks.style.display = "none"; // Show nav-links
+    }
+  });
+});
+
+    </script>
 </body>
 </html>

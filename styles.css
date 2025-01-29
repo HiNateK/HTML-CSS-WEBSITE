@@ -35,6 +35,39 @@ header li {
     text-decoration: none;
 }
 
+button {
+    background: transparent;
+    border: 2px solid var(--button-color, #000);
+    border-radius: 1rem;
+  }
+  
+  .button-three {
+    --button-color: black;
+    overflow: hidden;
+    display: none;
+  }
+  
+  .button-three .hamburger {
+    transition: translate 1s, rotate 1s;
+  }
+  
+  .button-three[aria-expanded="true"] .hamburger {
+    translate: 10px -10px;
+    rotate: 0.125turn;
+  }
+  
+  .button-three .line {
+    transition: 1s;
+    stroke-dasharray: 60 31 60 300;
+  }
+  
+  .button-three[aria-expanded="true"] .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+  }
+
+
+
 #nav-links > li > a {
     color: aliceblue;
     text-decoration: none;
@@ -132,27 +165,28 @@ span {
 }
 
 #btn-projects {
-    width: 50%;
-    margin: 0 auto;
-    background-color: #5792f9;
-    color: aliceblue;
-    padding: 10px 20px;
+    background-color: #fff;
+    color: rgb(70, 70, 70);
     border: none;
-    border-radius: 5px;
-    font-family: var(--ff-primary);
-    font-weight: 600;
-    text-transform: uppercase;
+    padding: 1rem 1rem;
+    width: 70%;
     cursor: pointer;
+    border-radius: 5px;
+    border-top: 0.3rem solid #5792f9;
+    margin: 2rem auto 0 auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 #btn-projects:hover {
-    background-color: #3b6bbf;
+    color: #5792f9;
+    transform: scale(103%) rotate(0deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 #btn-projects a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
-    font-size: 1.2rem;;
+    font-size: 1rem;;
 }
 
 footer {
@@ -197,7 +231,9 @@ footer {
         }
         #nav-links {
             display: none;
+            padding: 1rem 0;
         }
+       
         #about {
             flex-direction: column-reverse;
             gap: 0;
@@ -210,4 +246,19 @@ footer {
         main {
             padding: 0 0 2rem 0;
         }
+        #navbar {
+            flex-direction: column;
+        }
+
+        #logo {
+            padding: 0 0 0.5rem 0;
+        }
+        .button-three {
+            display: block;;
+        }
+}
+
+.hamburger {
+    width: 50px;
+    height: 50px;
 }
